@@ -6,7 +6,7 @@ def ask_first_name #fonction demande de prénom à l'utilisateur
 end
 
 def say_hello(first_name) #fonction dire bonjour à l'utilisateur
-  print "Bonjour, #{first_name} !"
+  puts "Bonjour, #{first_name} !"
 end
 
 def perform #fonction perform permettant d'appeler les deux fonctions ci-dessus, tout en stockant first_name
