@@ -8,7 +8,8 @@ while p < 10
     
     
     if dice == 5 || dice == 6
-        p = p + 1
+        puts p = p + 1
+        
         puts "tu es sur la marche #{p}"
         
         i = 0
@@ -25,7 +26,10 @@ while p < 10
 
 
     elsif dice == 1
-        p = p - 1
+        
+        puts p = p - 1
+        
+
         puts "tu es sur la marche #{p}"
 
         i = 0
@@ -42,6 +46,7 @@ while p < 10
 
 
     else
+        puts p
         puts "tu es sur la marche #{p}"
 
         i = 0
