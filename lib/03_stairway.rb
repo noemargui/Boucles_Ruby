@@ -70,9 +70,9 @@ end
 
 perform
 
-=begin
+
 100.times do 
     puts perform
 end
-=end
+
 
