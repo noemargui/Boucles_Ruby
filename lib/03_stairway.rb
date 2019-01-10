@@ -25,6 +25,9 @@ def game
 
         elsif dice == 1
             p = p - 1
+            if p < 0
+                p = 0
+            end
             puts "Tu es sur la marche numéro #{p}."
             puts""
             i = 0
@@ -54,6 +57,9 @@ def game
             end
             puts ""
         end
+    puts ""
+    puts "----------------------------"
+    puts ""    
     end
     puts "Bravo tu as gagné!"
 end
@@ -61,8 +67,12 @@ end
 def perform
     game
 end
-  
+
+perform
+
+=begin
 100.times do 
     puts perform
 end
+=end
 
