@@ -8,6 +8,7 @@ def game
         
         
         if dice == 5 || dice == 6
+            puts "Tu montes d'une marche."
             p = p + 1
             puts "Tu es sur la marche numéro #{p}."
             puts""
@@ -24,6 +25,7 @@ def game
 
 
         elsif dice == 1
+            puts "Tu descends d'une marche."
             p = p - 1
             if p < 0
                 p = 0
@@ -43,7 +45,7 @@ def game
 
 
         else
-            p
+            puts "Tu restes sur la même marche."
             puts "Tu es sur la marche numéro #{p}."
             puts""
             i = 0
@@ -70,9 +72,10 @@ end
 
 perform
 
-
+=begin
 100.times do 
     puts perform
 end
+=end
 
 
