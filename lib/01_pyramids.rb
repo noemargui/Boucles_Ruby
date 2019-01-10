@@ -1,4 +1,4 @@
-=begin def half_pyramid
+def half_pyramid
 	puts "Salut, bienvenue dans ma super half_pyramid ! Combien d'étages veux-tu ?"
 	user_floor = Integer(gets.chomp)
 	if user_floor < 1
@@ -72,8 +72,8 @@ end
 
 wtf_pyramid
 
-=end
 
+=begin
 puts "Salut, bienvenue dans ma wtf_pyramid !"
 def wtf_pyramid
 	puts "Combien d'étages veux-tu ?"
@@ -111,3 +111,4 @@ def wtf_pyramid
 end
 
 wtf_pyramid
+=end
