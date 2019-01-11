@@ -1,8 +1,9 @@
 def game
-
+    tournumber = 0
     p = 0
     while p < 10
 
+        tournumber = tournumber + 1
         dice = rand (1..6)
         puts "Ton lancer est un #{dice}."
         
@@ -64,18 +65,20 @@ def game
     puts ""    
     end
     puts "Bravo tu as gagné!"
+    return tournumber
 end
 
+def average_finish_time
+    totalFinishTime = 0
+    for testNumber in 1..100
+        totalFinishTime = totalFinishTime + game
+    end
+    puts "Moyenne sur 100 essais : #{totalFinishTime / 100}"
+end
+
+
 def perform
-    game
+    average_finish_time
 end
 
 perform
-
-=begin
-100.times do 
-    puts perform
-end
-=end
-
-
